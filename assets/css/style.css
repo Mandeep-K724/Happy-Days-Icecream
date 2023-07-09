@@ -44,8 +44,10 @@ cursor: pointer;
 }
 
 #logo img {
-  height:30px;
+  height:45px;
+  width:80px;
   margin-right: 20px;
+  border-radius: 10px;
  
   
  }
@@ -164,23 +166,21 @@ header .btn-order:hover {
 }
 
 
-#aboutus {
-  background: url('../images/aboutus/aboutus.jpg')center 80%/cover  no-repeat;
-  padding: 1rem;
-  }
+
   
  
 
 #aboutus-boxes  {
   min-height: 100%;
     width: 100%;
-    background: #ffffff;
+    background: url('../images/aboutus/aboutus.jpg')center 80%/cover  no-repeat;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    overflow: hidden;
 
  
 }
