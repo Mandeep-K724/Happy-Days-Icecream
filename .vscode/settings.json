@@ -1,3 +1,4 @@
 {
-    "commitPro.enableDefaultCommitlintRulesDiagnostics": false
+    "commitPro.enableDefaultCommitlintRulesDiagnostics": false,
+    "liveServer.settings.port": 5501
 }

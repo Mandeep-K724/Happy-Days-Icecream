@@ -259,6 +259,7 @@ background: url('../images/contactus/contact2.jpg') center center / cover no-rep
     width: 50%;
     display: flex;
     flex-direction: column;
+   
 }
 .containers .details .boxes {
   position: relative;
@@ -266,6 +267,7 @@ background: url('../images/contactus/contact2.jpg') center center / cover no-rep
   display: flex;
  
 }
+
 .containers .details .boxes .icon{
   min-width: 50px;
   height: 50px;
@@ -276,6 +278,7 @@ background: url('../images/contactus/contact2.jpg') center center / cover no-rep
   border-radius: 50%;
   font-size: 22px;
 }
+ 
 .containers .details .boxes .text {
   display: flex;
   margin-left:20px;
@@ -344,7 +347,7 @@ font-size: 18px;
 input[type="submit"],
 input[type="reset"]
 {
-  background-color: #e09393;
+  background-color: #f5cdcd;
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -382,41 +385,43 @@ input[type="reset"]
   background: url('../images/login/loginback.jpg')center 30% /cover  no-repeat;
   margin-bottom: 2em;
   position: absolute;
+  
 }
 .loginform {
-  width:60%;
-  height:70%;
+  width:30%;
+  height:50%;
   position: relative;
   margin: 6% auto;
   background: #e9e4e4;
-  padding: 3px;
+  padding: 4px;
+
 }
 .input-box
 {
-  width: 20%;
-  margin:  35px auto;
+  width:80%;
   position: relative;
   border-radius: 20px;
+ cursor: pointer;
 }
 .toggle-bar {
   position: relative;
-  padding: 10px 30px;
+  padding: 4px 4px;
   cursor: pointer;
   background: transparent;
+  width:30%;
+ 
   }
-  #buttons {
-    top:0;
-    left:0;
+  form #buttons {
+    
     position: absolute;
-    width:  150px;
-    height: 100%;
-    background: linear-gradient(#e9b2b2);
+    width:  130px;
+    height: 12%;
+    background: linear-gradient(to right, #ff105f, #e9b2b2);
     border-radius: 30px;
     transition: 0.5s;
 
   }
   .input-bars {
-    top: 180px;
     position: absolute;
     width: 280px;
     transition: 0.5s;
@@ -424,22 +429,33 @@ input[type="reset"]
   .input-bar {
     width: 100%;
     padding: 10px 0;
-    margin:  5px 0;
+    margin:  2px 0;
     border-bottom: 1px solid black;
     outline: none;
     background: transparent;
   }
   .submit-bar  {
-    width: 85%;
-    padding: 10px 30px;
+    width: 70%;
+    padding: 9px;
     cursor:pointer;
     display: block;
-    margin: auto;
+    margin:8%;
     border: 0;
     border-radius: 30px;
+  
    
   }
-
+  .check-btn {
+    margin: 0%;
+   float: left;
+  } 
+  .check-btn span {
+   padding: 4%;
+  }
+  input[type="checkbox"]
+{
+ float: left;
+}
 
 /*Map section*/
 #map-section {
