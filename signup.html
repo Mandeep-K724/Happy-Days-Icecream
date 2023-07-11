@@ -31,24 +31,43 @@
                     <li><a href="login.html" aria-label="Go to the login  section"><button>Login</button></a></li>
                 </ul>
             </div>
-            <div class="form loginform">
-                <h2 class="center">Login<i</h2>
-                <form action="https://formdump.codeinstitute.net" method="POST">
-                    <div class="input-display">
-                        <input type="text" name="name" required="required">
-                        <span>Full Name</span>
-                    </div>
-                    <div class="input-display">
-                        <input type="password" name="password" required="required">
-                        <span>Password***</span>
-                    </div>
-                    <div class="input-display">
-                        <input type="submit" name="submit" value="Login">
-                        <input type="reset" name="reset" value="Reset">
-                    </div>
-                </form>
+            <div class="form signupform">
+                <h2 class="center">Register<i< /h2>
+                        <form action="https://formdump.codeinstitute.net" method="POST">
+                            <div class="input-display">
+                                <input type="text" name="name" required="required">
+                                <span>Full Name</span>
+                            </div>
+                            <div class="input-display">
+                                <input type="email" name="email" required="required">
+                                <span>Email</span>
+                            </div>
+                            <div>
+                                <select id="gender" name="gender" placeholder="Gender" required>
+                                    <option value="male">Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                            <div class="input-display">
+                                <input type="password" name="password" required="required">
+                                <span>Enter password***</span>
+                            </div>
+                            <div class="input-display">
+                                <input type="password" name="password" required="required">
+                                <span>Re-enter your password***</span>
+                            </div>
+                            <div class="input-display">
+                                <input type="submit" name="submit" value="Login">
+                                <input type="reset" name="reset" value="Reset">
+                            </div>
+                        </form>
+                        <p>By clicking the SignUp button,you agree to our<br>
+                            <a href="terms.html">Terms&Conditions,Policy.</a>
+                        </p>
+                        <p class="para2">Already have an account? <a href="login.html">Login here</a></p>
             </div>
-            <p>Not have and account?<a href="signup.html">Register here</a></p>
+
     </header>
 </body>
 
