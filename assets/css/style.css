@@ -323,8 +323,9 @@ label {
 .form {
   width: 40%;
   padding: 30px;
-  background: #e9e4e4;
+  background-image: linear-gradient(to right, rgb(243, 219, 219) , rgb(255, 249, 254));
   border-radius: 50px;
+  margin-top: 4%;
 }
 
 .form h2
@@ -422,10 +423,11 @@ position: absolute;
 
 .loginform {
   align-items: center;
-  margin-top: 1rem;
-  height: 50%;
-  width: 40%;
+  margin-top: rem;
+  height: 45%;
+  width: 30%;
   display: inline-block;
+ 
 }
 
 .loginform p {
@@ -437,7 +439,7 @@ position: absolute;
 }
 
 .loginform a:hover {
-  color: rgb(250, 6, 217);
+  color: rgb(252, 49, 225);
   text-decoration: underline;
 
 }
