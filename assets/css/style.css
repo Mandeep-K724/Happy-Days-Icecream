@@ -513,7 +513,7 @@ input[type="reset"]:hover {
 .signupform {
   align-items: center;
   margin-top: 3rem;
-  height: 73%;
+  height: 66%;
   width: 30%;
   display: inline-block;
 }
