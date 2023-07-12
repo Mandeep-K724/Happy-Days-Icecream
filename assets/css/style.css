@@ -20,7 +20,7 @@ body {
   height: 100vh;
   display: block;
   background: url('../images/backgrounds/homeback.jpg')center 5% /cover no-repeat;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 
@@ -103,17 +103,17 @@ header .btn-order:hover {
 .header p {
   font-size: 14px;
   color: rgb(5, 5, 5);
-  margin: 1px 6px;
   letter-spacing: 1px;
+
 }
 
 .header h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: rgb(77, 9, 9);
-  margin-top: 14%;
+  margin-top: 13%;
   text-shadow: 1px 1px #49610b;
   font-family: tangerine;
-  padding: 24px;
+  padding: 4px;
 }
 
 h2,
@@ -129,6 +129,7 @@ h3 {
   font-weight: bold;
   text-decoration: underline;
   color: #0a0a0a;
+  margin-bottom: 2%;
 }
 
 .center {
@@ -178,9 +179,9 @@ h3 {
 
 #aboutus {
   background: url('../images/aboutus/aboutusback3.jpg')center /cover no-repeat;
-  margin-bottom: 17%;
   height: 100vh;
-  margin: 0 10em 17% 10em;
+  margin: 0 10em 3% 10em;
+  border: 1px solid brown;
   border-radius: 20px;
   justify-content: center;
 }
@@ -188,14 +189,26 @@ h3 {
 
 #aboutus-boxes {
   max-width: 60%;
-  margin: 20px auto;
+  margin: 10px auto;
   width: 100%;
   display: flex;
   overflow: hidden;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  animation: effect 17s ease-in-out infinite forwards;
 }
+
+@keyframes effect {
+  from {
+    height: 0%;
+  }
+
+  to {
+    height: 77%;
+  }
+}
+
 
 #aboutus h2 {
   color: #f53df5;
@@ -217,42 +230,76 @@ h3 {
   height: 220px;
   padding: 20px;
   text-align: center;
-  border: 2px solid rgb(255, 130, 130);
+  border: 2px solid rgb(15, 3, 3);
   margin: 10px;
   border-radius: 15px;
   justify-content: center;
 
 }
 
+/* services section */
 
-
-
-
-#facilities {
-  display: flex;
-
-  justify-content: center;
-  width: 80%;
+.services-boxes {
+  background-image: linear-gradient(to right, rgb(248, 172, 172), rgb(197, 197, 197), rgb(255, 167, 240));
   border-radius: 11px;
+  margin: 1% auto;
+  height: 15em;
+  width: 55%;
   align-items: center;
-  align-content: center;
-
-}
-
-#facilities-boxes .box {
-  height: 8em;
-  width: 50%;
-  align-items: center;
+  text-align: left;
   justify-content: center;
   display: flex;
+  padding: 12px;
+  border: 1px solid rgb(15, 3, 3);
 }
 
-#facilities li {
+.services-boxes div {
+  margin: 10px;
+}
+
+.services-boxes li {
   list-style: none;
+  padding: 4px;
+
 }
 
+.services-boxes h2 {
+  margin-top: 8%;
+}
 
+.services-boxes p {
+  padding: 10px;
+}
 
+.services-boxes img {
+  border: 1px solid black;
+}
+
+/* flavours section*/
+#flavours {
+  margin-top: 3%;
+}
+
+.flavours-boxes {
+  width: 40%;
+  margin: 1px auto;
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  transition: 3s;
+  background: #feffff;
+}
+
+.flavourbox:hover {
+  flex: 1;
+}
+
+.flavours-boxes img {
+  height: 250px;
+  width: 200px;
+}
 
 /*contact us section*/
 #contactus {
@@ -466,7 +513,7 @@ input[type="reset"]:hover {
 .signupform {
   align-items: center;
   margin-top: 3rem;
-  height: 68%;
+  height: 73%;
   width: 30%;
   display: inline-block;
 }
@@ -478,7 +525,7 @@ input[type="reset"]:hover {
 }
 
 .signupform p {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   padding: 4%;
 }
@@ -520,7 +567,7 @@ h3 {
 
 /*Map section*/
 #map-section {
-  margin-bottom: 2px;
+  margin: 3% 0 2px;
 
 }
 

@@ -12,7 +12,7 @@
     <meta name="author" content="Happy Days Icecream" />
 
     <title>Happy Days Icecream</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logos/Capture.PNG">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logos/logo.png">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -20,12 +20,13 @@
     <header class="center  header">
         <div class="navbar">
             <div id="logo">
-                <a href="index.html"><img src="assets/images/logos/Capture.PNG" alt="website's logo"></a>
+                <a href="index.html"><img src="assets/images/logos/logo.png" alt="website's logo"></a>
             </div>
             <ul>
                 <li><a href="index.html" aria-label="Go to the top of the page">Home</a></li>
                 <li><a href="#aboutus" aria-label="Go to about us section">About us</a></li>
-                <li><a href="#flavours" aria-label="Go to products section">Flavours</a></li>
+                <li><a href="#services" aria-label="Go to products section">Services</a></li>
+                <li><a href="#flavours" aria-label="Go to products section">Products</a></li>
                 <li><a href="#contactus" aria-label="Go to the products section">Contact Us</a></li>
                 <li><a href="login.html" aria-label="Go to the login  section"><button>Login</button></a></li>
             </ul>
@@ -33,7 +34,7 @@
         <div>
             <h1>Happy Days Icecream</h1>
             <p>Handmade Irish Icecream firm since 2021!</p>
-            <button href="#order-form" class="btn-order">Order Now</button>
+            <button href="order.html" class="btn-order">Order Now</button>
         </div>
     </header>
 
@@ -72,26 +73,50 @@
         </div>
     </section>
 
-    <section class="center services">
-            <h2 class="main-h underline">Services</h2>
-            <div id="facilitiy-boxes">
-                <ol class="capitalize box">
+    <section class="center" id="services">
+        <h2 class="main-h underline">Services</h2>
+        <div class="services-boxes">
+            <div>
+                <ol class="capitalize">
                     <li>Free access of wifi</li>
                     <li>Charging outlets with every table</li>
-                    <li>Happy Days high quality flavoured icecreams to uplift your day in summer</li>
+                    <li>High quality flavoured icecreams to uplift your day in summer</li>
                     <li>Glueten-Free and Vegetarian options available</li>
                 </ol>
+
+            </div>
+            <div class="center">
+                <img src="assets/images/services/delivery.jpg" height="80px" width="150px" alt="delivery picture">
+                <p>Home delivery options available</p>
+            </div>
+    </section>
+
+    <section id="flavours" class="center">
+        <img src="assets/images/flavours/flavour.png" alt="flavours and products image">
+        <div class="flavours-boxes">
+            <div class="flavourbox">
+                <img src="assets/images/flavours/stawbery.png" alt="strawbery Icecream picture">
+                <p>Strawberry</p>
+                <div><span>$10</span></div>
+            </div>
+            <div class="flavourbox">
+                <img src="assets/images/flavours/vanilla.png" alt="vanilla Icecream picture">
+                <p>Vanilla</p>
+                <div><span>$10</span></div>
+            </div>
+            <div class="flavourbox">
+                <img src="assets/images/flavours/chocolate.png" alt="chocolate Icecream picture">
+                <p>Chocholate</p>
+                <div><span>$10</span></div>
             </div>
         </div>
     </section>
-
 
 
     <section id="map-section" class="center">
         <h2 class="main-h">Our location</h2>
         <iframe class="map" src="https://bit.ly/3X9YAVI"></iframe>
     </section>
-
 
     <section id="contactus">
         <div class="items">
@@ -121,7 +146,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="form">
                 <h2 class="center text-color">Send Message</h2>
                 <form action="https://formdump.codeinstitute.net" method="POST">
@@ -146,8 +170,8 @@
                         <input type="submit" name="submit" value="Submit">
                         <input type="reset" name="reset" value="Reset">
                     </div>
+                </form>
             </div>
-            </form>
     </section>
 
 
