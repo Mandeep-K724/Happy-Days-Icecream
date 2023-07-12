@@ -119,11 +119,12 @@ header .btn-order:hover {
 h2,
 h3 {
   font-family: tangerine;
-  font-size: 16px;
+  font-size: 18px;
+  color: #000;
+  text-decoration: underline;
 }
 
 .main-h {
-  font-family: roboto;
   font-size: 24px;
   font-weight: bold;
   text-decoration: underline;
@@ -156,7 +157,7 @@ h3 {
 }
 
 .text-color {
-  color: #ff0707;
+  color: #f812b3;
 }
 
 .float-left {
@@ -168,40 +169,62 @@ h3 {
 }
 
 .background-color {
-  background-color: rgb(202, 175, 149);
+  background-color: rgb(233, 225, 217);
 }
 
 
 
+/*About us section*/
+
+#aboutus {
+  background: url('../images/aboutus/aboutusback3.jpg')center /cover no-repeat;
+  margin-bottom: 17%;
+  height: 100vh;
+  margin: 0 10em 17% 10em;
+  border-radius: 20px;
+  justify-content: center;
+}
 
 
 #aboutus-boxes {
-  margin-bottom: 10%;
-  background: url('../images/aboutus/aboutboxs.jpg');
+  max-width: 60%;
+  margin: 20px auto;
   width: 100%;
-  background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
+  display: flex;
   overflow: hidden;
- 
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
- 
+
+#aboutus h2 {
+  color: #f53df5;
+  font-size: 24px;
+  padding-top: 20px;
+
+}
+
+#aboutus h3 {
+  margin: 0 0 14px;
+}
 
 
-#aboutus-boxes div{
-  width: 50%;
-  height: 200px;
-  float: left;
-  padding: 30px 0 0 10px;
+#aboutus-boxes .box {
+  background-image: url('../images/aboutus/aboutus.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 290px;
+  height: 220px;
+  padding: 20px;
   text-align: center;
-  border: 2px solid white;
-  box-sizing: border-box;
+  border: 2px solid rgb(255, 130, 130);
+  margin: 10px;
+  border-radius: 15px;
+  justify-content: center;
+
 }
 
 
-.box>p {
-  padding: .6rem;
-}
 
 
 
@@ -256,7 +279,7 @@ h3 {
 }
 
 .containers .details {
-  width: 50%;
+  width: 35%;
   display: flex;
   flex-direction: column;
 
@@ -264,7 +287,7 @@ h3 {
 
 .containers .details .boxes {
   position: relative;
-  padding: 20px 0;
+  padding: 20px 5%;
   display: flex;
 
 }
@@ -289,37 +312,39 @@ h3 {
 
 }
 
-#contactus h3 {
-  color: rgb(250, 6, 217);
-  font-size: 20px;
-}
+
 
 #contactus h2 {
-  color: rgb(255, 123, 255);
+  margin-bottom: 20px;
 }
-
 
 
 .form {
   width: 40%;
-  padding: 30px;
+  padding: 20px;
   background-image: linear-gradient(to right, rgb(255, 213, 213), rgb(255, 249, 254));
   border-radius: 50px;
-  margin-top: 4%;
+  margin-top: 1%;
+
 }
 
 .form h2 {
-  color: rgb(100, 14, 96);
-  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .form .input-display {
   position: relative;
   width: 100%;
-  margin-top: 3px;
   font-size: 14px;
   font-weight: 400;
+  padding-top: 5px;
 }
+
+#contactus .form {
+  width: 30%;
+  padding: 40px;
+}
+
 
 
 .form .input-display input,
@@ -333,6 +358,11 @@ h3 {
   resize: none;
   font-size: 12px;
 }
+
+.input-display textarea {
+  height: 5em;
+}
+
 
 .form .input-display span {
   position: absolute;
@@ -355,13 +385,14 @@ h3 {
 
 input[type="submit"],
 input[type="reset"] {
-  background-color: #f5cdcd;
+  background-color: #eeb8b8;
   border: none;
   border-radius: 20px;
   cursor: pointer;
   padding: 5px;
   font-size: 14px;
-  width: 30px;
+  width: 11.4em;
+  margin-top: 14px;
 }
 
 input[type="submit"]:hover {
@@ -403,7 +434,7 @@ input[type="reset"]:hover {
 
 .loginform {
   align-items: center;
-  margin-top: rem;
+  margin-top: 3rem;
   height: 45%;
   width: 30%;
   display: inline-block;
@@ -411,7 +442,13 @@ input[type="reset"]:hover {
 }
 
 .loginform p {
-  margin-top: 12px;
+  margin-top: 20px;
+}
+
+.loginform .input-display {
+  width: 85%;
+  margin-left: 28px;
+
 }
 
 .loginform a {
@@ -428,33 +465,42 @@ input[type="reset"]:hover {
 
 .signupform {
   align-items: center;
-  margin-top: rem;
-  height: 70%;
+  margin-top: 3rem;
+  height: 68%;
   width: 30%;
   display: inline-block;
+}
+
+.signupform .input-display {
+  width: 85%;
+  margin-left: 28px;
+
 }
 
 .signupform p {
   font-size: 14px;
   font-weight: 400;
-  padding: 2px;
-
+  padding: 4%;
 }
 
 .signupform a {
-  color: #920505;
+  color: #f70d0d;
   text-decoration: none;
+  padding: 4px;
 }
 
 .signupform a:hover {
-  color: #b40cc4;
+  color: #6a4bf5;
   text-decoration: underline;
 }
 
-.signupform select,
-label {
-  float: left;
-
+select {
+  height: 25px;
+  width: 100px;
+  margin: 7px;
+  border: none;
+  margin-left: -56%;
+  border-bottom: 1px solid black;
 }
 
 /*terms section*/
@@ -494,7 +540,7 @@ footer {
 }
 
 footer a {
-  padding: 6px;
+  padding: 10px;
 }
 
 footer a:hover {
