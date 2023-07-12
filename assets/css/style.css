@@ -29,10 +29,11 @@ body {
   align-items: center;
   justify-content: center;
   height: 12%;
-  width: 100%;
+  width: 60%;
   background: #e9e4e4;
   border-bottom: 5px solid rgb(185, 130, 130);
   border-radius: 20px;
+  margin:0 20% 0 20%;
 }
 
 #logo {
@@ -513,7 +514,7 @@ input[type="reset"]:hover {
 .signupform {
   align-items: center;
   margin-top: 3rem;
-  height: 66%;
+  height: 6%;
   width: 30%;
   display: inline-block;
 }
