@@ -88,10 +88,6 @@ header button:hover {
   color: #2628ce;
 }
 
-.header .login-btn {
-  padding: 5px;
-  width: 7em;
-}
 
 .header p {
   font-size: 14px;
@@ -509,7 +505,7 @@ input[type="reset"]:hover {
   height: 100vh;
   background: url('../images/login/loginback.jpg')center 10% /cover no-repeat;
   margin-bottom: 2em;
- 
+
 }
 
 .loginform {
