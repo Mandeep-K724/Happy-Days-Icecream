@@ -134,7 +134,7 @@ h3 {
   font-weight: bold;
   text-decoration: underline;
   color: #0a0a0a;
- padding: 1% 0 1%;
+  padding: 0.5% 0 1%;
 }
 
 .center {
@@ -222,7 +222,7 @@ h3 {
 #aboutus h2 {
   color: #f53df5;
   font-size: 24px;
-  padding-top: 20px;
+  padding-top: 5px;
 }
 
 #aboutus h3 {
@@ -257,7 +257,7 @@ h3 {
   text-align: left;
   justify-content: center;
   display: flex;
-  padding: 12px;
+  padding: 9px;
   border: 1px solid rgb(15, 3, 3);
 }
 
@@ -511,9 +511,10 @@ input[type="reset"]:hover {
 .loginform {
   align-items: center;
   margin-top: 3rem;
-  height: 45%;
-  width: 40%;
+  height: 50%;
+  width: 30%;
   display: inline-block;
+  padding: 2%;
 
 }
 
@@ -523,7 +524,7 @@ input[type="reset"]:hover {
 
 .loginform .input-display {
   width: 85%;
-  margin-left: 28px;
+  margin-left: 12px;
 }
 
 .loginform a {
@@ -544,12 +545,12 @@ input[type="reset"]:hover {
   height: 66%;
   width: 40%;
   display: inline-block;
-
+  padding: 2%;
 }
 
 .signupform .input-display {
   width: 85%;
-  margin-left: 28px;
+  margin-left: 12px;
 
 }
 
@@ -572,14 +573,7 @@ input[type="reset"]:hover {
   text-decoration: underline;
 }
 
-select {
-  height: 30px;
-  width: 100px;
-  margin: 7px;
-  border: none;
-  margin-left: -68%;
-  border-bottom: 1px solid black;
-}
+
 
 /*terms page section*/
 
@@ -731,10 +725,15 @@ footer>p {
   #contactus .form {
     width: 30%;
   }
+
+  .loginform {
+    height: 60%;
+    width: 50%;
+  }
 }
 
 
-@media screen and (max-width:925px) {
+@media screen and (max-width:926px) {
   #logo {
     padding: 100px;
   }
@@ -746,7 +745,7 @@ footer>p {
   }
 
   .navbar ul li a {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .check-box {
@@ -759,7 +758,7 @@ footer>p {
     width: 90%;
     height: 90vh;
     background-color: transparent;
-    top: 80px;
+    top: 10px;
     left: -100%;
     text-align: center;
     transition: all .5s;
@@ -767,32 +766,40 @@ footer>p {
 
   .navbar ul li {
     display: inline-block;
-    margin: 5px 0;
+    margin: 9px 0;
     line-height: 30px;
-    padding: 1%;
+    border-radius: 15px;
+    background-color: #e9b2b2;
+    width: 14%;
+    height: 6%;
   }
 
   .navbar ul li a {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   #checkbox:checked~ul {
     left: -4%;
-    top: 8%;
+    top: 10%;
   }
 }
 
 @media screen and (max-width:703px) {
   #aboutus {
-    height: 185vh;
+    height: 183vh;
   }
 }
 
 @media screen and (max-width:664px) {
   .header h1 {
     font-size: 2.4rem;
-    margin-top: 20%;
+    margin-top: 28%;
   }
+
+  .header p {
+    font-size: 12px;
+  }
+
 
   #contactus {
     height: 130vh;
@@ -809,6 +816,36 @@ footer>p {
   #contactus .form {
     width: 40%;
   }
+
+  .signupform {
+    padding: 3%;
+    height: 70%;
+    width: 60%;
+  }
+
+  .header {
+    height: 100vh;
+  }
+
+  .loginform {
+    height: 50%;
+    width: 60%;
+  }
+  .navbar {
+    height: 10%;
+  }
+
+  .navbar ul li {
+    margin: 30px 0px;
+    width: 14%;
+
+  }
+
+  .navbar ul li a {
+    font-size: 12px;
+  }
+
+
 }
 
 @media screen and (max-width:672px) {
@@ -816,13 +853,19 @@ footer>p {
   .containers .details .boxes {
     padding-left: 1%;
   }
+
+  .containers .details .boxes .text {
+    color: #000;
+  }
 }
+
 
 @media screen and (max-width:485px) {
   .services-boxes {
     height: 18rem;
     text-align: center;
   }
+
 
   #contactus {
     height: 145vh;
@@ -854,23 +897,32 @@ footer>p {
   #contactus {
     height: 126vh;
   }
-  .containers .details .boxes .text {
-    color: #000;
-  }
+}
 
+@media screen and (max-width:409px) {
+  .navbar ul li {
+    width: 16%;
+  }
 }
 
 @media screen and (max-width:356px) {
   .flavours-boxes {
     flex-direction: column;
   }
+  .navbar ul li {
+    width: 20%;
+  }
+  .header h1 {
+    margin-top: 40%;
+  }
 }
-@media screen and (max-width:385px)
-{
+
+@media screen and (max-width:385px) {
   .services-boxes {
     height: 23rem;
-}
-#contactus {
-  height: 135vh;
-}
+  }
+
+  #contactus {
+    height: 135vh;
+  }
 }
