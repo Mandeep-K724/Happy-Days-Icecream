@@ -56,10 +56,11 @@ body {
 .check-box {
   font-size: 20px;
   color: #070707;
-  margin-left: 30px;
   cursor: pointer;
   display: none;
   background-color: #e9b2b2;
+  width: 7%;
+  border-radius: 20%;
 }
 
 #checkbox {
@@ -71,13 +72,14 @@ body {
   position: relative;
   display: inline-block;
   margin: 10px 0 10px 2em;
-  color: azure;
+  color: rgb(230, 252, 252);
+
 }
 
 .navbar ul li a {
   text-decoration: none;
   font-size: 14px;
-  color: #f8f4f4;
+  color: #940101;
 }
 
 .navbar a:hover {
@@ -132,6 +134,7 @@ h3 {
   font-weight: bold;
   text-decoration: underline;
   color: #0a0a0a;
+ padding: 1% 0 1%;
 }
 
 .center {
@@ -605,8 +608,6 @@ h3 {
 #map-section .map {
   height: 50vh;
   width: 80%;
-  transition-duration: 0.4s;
-  transition-property: transform;
 }
 
 /*footer section*/
@@ -733,45 +734,54 @@ footer>p {
 }
 
 
-@media screen and (max-width:925px){
-#logo
-{padding: 100px;}
-#logo img {
-  height: 25px;
-  width: 45px;
-  margin-left: -200px;
-}
+@media screen and (max-width:925px) {
+  #logo {
+    padding: 100px;
+  }
 
-.navbar ul li a {
-font-size: 16px;
+  #logo img {
+    height: 25px;
+    width: 45px;
+    margin-left: -200px;
   }
-  .check-box{
+
+  .navbar ul li a {
+    font-size: 16px;
+  }
+
+  .check-box {
     display: block;
-  
+
   }
-  ul{
+
+  ul {
     position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
+    width: 90%;
+    height: 90vh;
+    background-color: transparent;
     top: 80px;
-    left:-100%;
+    left: -100%;
     text-align: center;
     transition: all .5s;
   }
-  .navbar ul li  {
-    display: block;
-    margin: 50px 0;
+
+  .navbar ul li {
+    display: inline-block;
+    margin: 5px 0;
     line-height: 30px;
+    padding: 1%;
   }
-  .navbar ul li a{
-    font-size: 20px;
+
+  .navbar ul li a {
+    font-size: 16px;
   }
-#checkbox:checked ~ ul {
-  left:0;
+
+  #checkbox:checked~ul {
+    left: -4%;
+    top: 8%;
+  }
 }
 
-}
 @media screen and (max-width:703px) {
   #aboutus {
     height: 185vh;
@@ -779,10 +789,11 @@ font-size: 16px;
 }
 
 @media screen and (max-width:664px) {
-  .header h1{
+  .header h1 {
     font-size: 2.4rem;
     margin-top: 20%;
   }
+
   #contactus {
     height: 130vh;
   }
@@ -835,10 +846,31 @@ font-size: 16px;
   .navbar ul li {
     margin: 1px;
   }
+
+  .containers .details .boxes {
+    padding: 5px;
+  }
+
+  #contactus {
+    height: 126vh;
+  }
+  .containers .details .boxes .text {
+    color: #000;
+  }
+
 }
 
 @media screen and (max-width:356px) {
   .flavours-boxes {
     flex-direction: column;
   }
+}
+@media screen and (max-width:385px)
+{
+  .services-boxes {
+    height: 23rem;
+}
+#contactus {
+  height: 135vh;
+}
 }
