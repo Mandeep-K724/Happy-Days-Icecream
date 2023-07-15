@@ -53,7 +53,7 @@ body {
   border-radius: 10px;
 }
 
-.check-box {
+.check-boxes {
   font-size: 20px;
   color: #070707;
   cursor: pointer;
@@ -63,7 +63,7 @@ body {
   border-radius: 20%;
 }
 
-#checkbox {
+#check-box {
   display: none;
 }
 
@@ -78,7 +78,7 @@ body {
 
 .navbar ul li a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   color: #940101;
 }
 
@@ -134,7 +134,7 @@ h3 {
   font-weight: bold;
   text-decoration: underline;
   color: #0a0a0a;
-  padding: 0.5% 0 1%;
+  padding: 1%
 }
 
 .center {
@@ -346,6 +346,7 @@ h3 {
   background: url('../images/contactus/contact1.jpg') center 85% / cover no-repeat;
 }
 
+
 #contactus .items {
   max-width: 800px;
   text-align: center;
@@ -356,17 +357,17 @@ h3 {
 }
 
 .containers {
-  width: 130%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 4%;
 }
 
 .containers .details {
   width: 40%;
   display: flex;
   flex-direction: column;
-
 }
 
 .containers .details .boxes {
@@ -431,9 +432,10 @@ h3 {
 
 #contactus .form {
   width: 30%;
-  padding: 35px;
+  padding: 30px;
   height: 95%;
 }
+
 
 
 
@@ -481,7 +483,7 @@ input[type="reset"] {
   cursor: pointer;
   padding: 5px;
   font-size: 14px;
-  width: 11.4em;
+  width: 11.5em;
   margin-top: 14px;
 }
 
@@ -634,123 +636,105 @@ footer>p {
 }
 
 
-/* Meadia Queries */
-@media screen and (max-width:1170px) {
-  #aboutus-boxes {
-    max-width: 60%;
+/* Media Queries */
+
+/* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  .header h1 {
+    margin-top: 30%;
+    font-size: 7em;
+   }
+
+   .navbar{
+    height: 9%;
+   }
+
+  #aboutus {
+    height: 42vh;
+   }
+   #map-section .map {
+    height: 30vh;
+    width: 70%;
   }
-}
-
-@media screen and (max-width:1003px) {
-  #aboutus-boxes {
-    max-width: 100%;
+  #contactus{
+    height: 43vh;
   }
-}
-
-#contactus {
-  height: 80vh;
-}
-
-@media screen and (max-width:1008px) {
-
   input[type="submit"],
-  input[type="reset"] {
-    width: 10em;
-  }
+input[type="reset"] {
+  width: 11em;
+}
+  
+.loginform {
+  height: 20%;
+  width: 40%;
+  margin-top: 10%;
+}
+.signupform {
+  height: 30%;
+  margin-top: 10%;
+}
 }
 
-@media screen and (max-width:907px) {
 
-  input[type="submit"],
-  input[type="reset"] {
-    width: 6em;
-  }
+/* 
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+ .header h1 {
+  margin-top: 30%;
+  font-size: 5em;
+ }
+ .navbar{
+  height: 8%;
+ }
+ #aboutus {
+  height: 45vh;
+ }
+ #aboutus-boxes {
+  max-width: 70%;
 }
 
-@media screen and (max-width:952px) {
-  #logo {
-    padding-left: 50px;
-  }
+.services-boxes {
+  height: 20rem;
+}
+#map-section .map {
+  height: 35vh;
+  width: 80%;
+}
+#contactus{
+  height:40vh;
+}
+input[type="submit"],
+input[type="reset"] {
+  width: 8.6em;
+}
+.loginform{
+  height: 20%;
+  width: 40%;
+  margin-top: 10%;
+}
+.signupform{
+  height: 30%;
+  margin-top: 10%;
+}
+  
 }
 
-/* From 773px wide to down */
-@media screen and (max-width:773px) {
-  .header {
-    height: 70vh;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .navbar {
-    width: 80%;
-    height: 16%;
-  }
-
-  .navbar ul li {
-    margin: 4px;
-  }
 
 
-  #logo img {
-    height: 10px;
-    width: 15px;
-    margin-right: 1px;
-  }
-
-  .services-boxes {
-    height: 18rem;
-    flex-direction: column;
-    padding: 30px;
-    text-align: center;
-  }
-
-  .flavours-boxes img {
-    height: 90px;
-    width: 90px;
-  }
-
-  #contactus {
-    height: 80vh;
-  }
-
-  .containers .details .boxes {
-    padding-left: 1%;
-  }
-
-  input[type="submit"],
-  input[type="reset"] {
-    width: 6em;
-  }
-
-  #contactus .form {
-    width: 30%;
-  }
-
-  .loginform {
-    height: 60%;
-    width: 50%;
-  }
-}
-
+/* Media query to call menu button */
 
 @media screen and (max-width:926px) {
-  #logo {
-    padding: 100px;
-  }
 
-  #logo img {
-    height: 25px;
-    width: 45px;
-    margin-left: -200px;
-  }
-
-  .navbar ul li a {
-    font-size: 14px;
-  }
-
-  .check-box {
+  .check-boxes {
     display: block;
-
   }
 
   ul {
@@ -763,166 +747,257 @@ footer>p {
     text-align: center;
     transition: all .5s;
   }
-
   .navbar ul li {
     display: inline-block;
-    margin: 9px 0;
+    margin: 12px 5px 0 5px;
     line-height: 30px;
-    border-radius: 15px;
     background-color: #e9b2b2;
-    width: 14%;
+    width: 16%;
     height: 6%;
   }
 
   .navbar ul li a {
-    font-size: 14px;
+    font-size: 20px;
   }
-
-  #checkbox:checked~ul {
-    left: -4%;
-    top: 10%;
-  }
-}
-
-@media screen and (max-width:703px) {
-  #aboutus {
-    height: 183vh;
-  }
-}
-
-@media screen and (max-width:664px) {
-  .header h1 {
-    font-size: 2.4rem;
-    margin-top: 28%;
-  }
-
-  .header p {
-    font-size: 12px;
-  }
-
-
-  #contactus {
-    height: 130vh;
-  }
-
-  .containers .details .boxes {
-    padding: 3%;
-  }
-
-  .containers {
-    flex-direction: column;
-  }
-
-  #contactus .form {
-    width: 40%;
-  }
-
-  .signupform {
-    padding: 3%;
-    height: 70%;
-    width: 60%;
-  }
-
-  .header {
-    height: 100vh;
-  }
-
-  .loginform {
-    height: 50%;
-    width: 60%;
-  }
-  .navbar {
-    height: 10%;
-  }
-
-  .navbar ul li {
-    margin: 30px 0px;
-    width: 14%;
-
-  }
-
-  .navbar ul li a {
-    font-size: 12px;
-  }
-
-
-}
-
-@media screen and (max-width:672px) {
-
-  .containers .details .boxes {
-    padding-left: 1%;
-  }
-
-  .containers .details .boxes .text {
-    color: #000;
+  #check-box:checked~ul {
+    left: 4%;
+    top: 9%;
   }
 }
 
 
-@media screen and (max-width:485px) {
-  .services-boxes {
-    height: 18rem;
-    text-align: center;
+ /* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .header h1 {
+      margin-top: 35%;
+      font-size: 4rem;
+    }
+    #aboutus
+
+    #logo {
+      padding-left: 10px;
+    }
+
+    #logo img {
+      height: 45px;
+      width: 75px;
+      margin-left: -200px;
+    }
+
+    .navbar {
+      height: 10%;
+    }
+
+  
+
+    #map-section .map {
+      height: 35vh;
+      width: 70%;
+    }
+
+
+    #contactus {
+      height: 45vh;
+    }
+
+    .loginform {
+      height: 25%;
+      width: 50%;
+      margin-top: 10%;
+    }
+
+    .signupform {
+      width: 55%;
+      height: 37%;
+      margin-top: 10%;
+    }
+  }
+
+  /* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    .header {
+      width: 100%;
+    }
+
+    .header h1 {
+      font-size: 2.6rem;
+      margin-top: 50%;
+    }
+
+    .navbar {
+      height: 10%;
+    }
+
+    
+    ul {
+      position: fixed;
+      width: 90%;
+      height: 90vh;
+      background-color: transparent;
+      top: 10px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+
+    #aboutus {
+      height: 130vh;
+    }
+
+    .flavours-boxes {
+      flex-direction: column;
+    }
+
+    #contactus {
+      height: 100vh;
+
+    }
+
+    #contactus .form {
+      width: 45%;
+    }
+
+    .containers .details {
+      flex-direction: column;
+    }
+
+    .containers {
+      flex-direction: column;
+    }
+
+
+    .containers .details .boxes .text {
+      color: #000;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      width: 5.3em;
+    }
+
+    .loginform {
+      height: 35%;
+      width: 60%;
+      margin-top: 10%;
+    }
+
+    .signupform {
+      width: 65%;
+      height: 45%;
+      margin-top: 10%;
+    }
   }
 
 
-  #contactus {
-    height: 145vh;
+  /* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+  @media (min-width: 320px) and (max-width: 480px) {
+    .navbar {
+      width: 80%;
+      height: 10%;
+    }
+    .header h1 {
+      font-size: 2rem;
+    margin-top: 45%;
   }
 
-  .containers {
-    flex-direction: column;
+  .header button{
+    width: 6em;
   }
+    #logo img {
+      height: 30px;
+      width: 65px;
+      margin-left: -100px;
+    }
+    .header {
+      width: 100%;
+    }
 
-  #contactus .form {
-    width: 40%;
-  }
+    .navbar ul li {
+      display: inline-block;
+      margin: 2px;
+      line-height: 30px;
+      background-color: #e9b2b2;
+      width: 25%;
+      height: 5%;
+      left: -2px;
+     display: block;
+ 
+    }
+    #check-box:checked~ul {
+      top: 11%;
+      left: 1%;
+    }
 
-}
+    
+   .navbar ul li a{
+      font-size: 12px;
+      }
+   
 
-@media screen and (max-width:471px) {
-  .navbar {
-    width: 100%;
-  }
+    #aboutus {
+      height: 206vh;
+    }
+    .services-boxes {
+      height: 23rem;
+      flex-direction: column;
+      text-align: center;
+    }
 
-  .navbar ul li {
-    margin: 1px;
-  }
+    
+    .flavours-boxes {
+      flex-direction: column;
+    }
 
-  .containers .details .boxes {
-    padding: 5px;
-  }
+    .containers .details .boxes {
+      padding: 5px;
+    }
 
-  #contactus {
-    height: 126vh;
-  }
-}
+    #contactus {
+      height: 150vh;
+    }
 
-@media screen and (max-width:409px) {
-  .navbar ul li {
-    width: 16%;
-  }
-}
+    #contactus .form {
+      width: 50%;
+    }
 
-@media screen and (max-width:356px) {
-  .flavours-boxes {
-    flex-direction: column;
-  }
-  .navbar ul li {
-    width: 20%;
-  }
-  .header h1 {
-    margin-top: 40%;
-  }
-}
+    
+    .containers {
+      flex-direction: column;
+    }
 
-@media screen and (max-width:385px) {
-  .services-boxes {
-    height: 23rem;
-  }
 
-  #contactus {
-    height: 135vh;
+    .containers .details .boxes .text {
+      color: #000;
+    }
+
+    #contactus .form {
+      width: 73%;
+      height: 50%
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      width: 6em;
+    }
+    .loginform {
+      height: 45%;
+      width: 70%;
+    }
+
+    .signupform {
+      width: 90%;
+      height: 75%;
+      top: 3%;
+    }
   }
-}
