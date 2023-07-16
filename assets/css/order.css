@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Noto+Sans+Tamil:wght@300&family=Oswald:wght@300&family=Roboto:wght@300;400&display=swap');
+
+/* CSS reset */
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Style for whole body */
+
+body {
+    font-family: roboto, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #0a0a0a;
+    margin: 0%;
+}
+
+/* Styles for navigation section */
+.navbar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 12%;
+    width: 70%;
+    background: #e9e4e4;
+    border-bottom: 5px solid rgb(185, 130, 130);
+    border-radius: 20px;
+}
+
+.navbar ul li {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    margin: 10px 0 10px 2em;
+    color: rgb(230, 252, 252);
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #940101;
+}
+
+.navbar a:hover {
+    color: rgb(32, 9, 206);
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+/* logo styles section */
+
+#logo {
+    margin-top: 3.7px;
+    padding: 1px;
+    cursor: pointer;
+}
+
+#logo img {
+    height: 45px;
+    width: 80px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+/* Menu button style */
+.check-boxes {
+    font-size: 20px;
+    color: #070707;
+    cursor: pointer;
+    display: none;
+    background-color: #e9b2b2;
+    width: 7%;
+    border-radius: 20%;
+}
+
+#check-box {
+    display: none;
+}
+
+/* Order form section styling*/
+
+.order-header {
+    width: 100%;
+    height: 100vh;
+    background: url('../images/order/orderback.jpg')center 40%/cover no-repeat;
+    margin-bottom: 2em;
+}
+
+.order-form {
+    width: 40%;
+    justify-items: left;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px auto;
+    background-color: white;
+}
+
+legend {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+fieldset {
+    margin: 10px;
+    background-color: #ffeeee;
+    padding-left: 20px;
+    border: none;
+}
+
+fieldset textarea {
+    width: 70%;
+}
+
+fieldset>div {
+    padding: 5px;
+}
+
+input[type=text],
+input[type=email] {
+    height: 35px;
+    width: 90%;
+    padding-left: 20px;
+    margin: 0 auto;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #eeb8b8;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 14px;
+    width: 11em;
+    margin-top: 14px;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+input[type="submit"]:hover {
+    text-decoration: none;
+    background-color: #bdc6eb;
+    color: #353bf0;
+}
+
+input[type="reset"]:hover {
+    text-decoration: none;
+    background-color: #bdc6eb;
+    color: #353bf0;
+}
+
+.center {
+    text-align: center;
+
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.float-left {
+    float: left;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1140px) {
+
+    .order-form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 918px) {
+    .order-form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 563px) {
+    .order-form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 417px) {
+    .order-form {
+        margin: auto;
+    }
+}
+
+/* Media query to call menu button */
+
+@media screen and (max-width:926px) {
+
+    .check-boxes {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 90%;
+        height: 90vh;
+        background-color: transparent;
+        top: 10px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .navbar ul li {
+        display: inline-block;
+        margin: 12px 5px 0 5px;
+        line-height: 30px;
+        background-color: #e9b2b2;
+        width: 16%;
+        height: 6%;
+    }
+
+    .navbar ul li a {
+        font-size: 20px;
+    }
+
+    #check-box:checked~ul {
+        left: 4%;
+        top: 9%;
+    }
+}

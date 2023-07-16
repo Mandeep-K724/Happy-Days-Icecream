@@ -1,5 +1,8 @@
+/* boiler plates */
 <!DOCTYPE html>
 <html lang="en">
+
+/* Head section */
 
 <head>
     <meta charset="UTF-8">
@@ -16,14 +19,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
+/* body and header section */
+
 <body>
     <header class="center  header">
         <div class="navbar">
             <a href="index.html" id="logo"><img src="assets/images/logos/logo.png" alt="website's logo"></a>
-            <input type="checkbox" id="checkbox">
-            <label for="checkbox" class="check-box">
-                <i class="fas fa-bars menu-btn"></i>
-            </label>
             <ul>
                 <li><a href="index.html" aria-label="Go to the top of the page">Home</a></li>
                 <li><a href="index.html#aboutus" aria-label="Go to about us section">About us</a></li>
@@ -31,24 +32,25 @@
                 <li><a href="index.html#contactus" aria-label="Go to the products section">Contact Us</a></li>
             </ul>
         </div>
-            <div class="form loginform">
-                <h2 class="center">Login</h2>
-                <form action="https://formdump.codeinstitute.net" method="POST">
-                    <div class="input-display">
-                        <input type="username" name="username" required="required">
-                        <span>Username</span>
-                    </div>
-                    <div class="input-display">
-                        <input type="password" name="password" required="required">
-                        <span>Password***</span>
-                    </div>
-                    <div>
-                        <input type="submit" name="submit" value="Login">
-                        <input type="reset" name="reset" value="Reset">
-                    </div>
-                    <p>Not have and account?<a href="signup.html">Register here</a></p>
-                </form>
-            </div>
+        /* form section */
+        <div class="form loginform">
+            <h2 class="center">Login</h2>
+            <form action="https://formdump.codeinstitute.net" method="POST">
+                <div class="input-display">
+                    <input type="username" name="username" required="required">
+                    <span>Username</span>
+                </div>
+                <div class="input-display">
+                    <input type="password" name="password" required="required">
+                    <span>Password***</span>
+                </div>
+                <div>
+                    <input type="submit" name="submit" value="Login">
+                    <input type="reset" name="reset" value="Reset">
+                </div>
+                <p>Not have and account?<a href="signup.html">Register here</a></p>
+            </form>
+        </div>
 
     </header>
 </body>

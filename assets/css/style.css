@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Noto+Sans+Tamil:wght@300&family=Oswald:wght@300&family=Roboto:wght@300;400&display=swap');
 
+/* css reset */
 * {
   margin: 0%;
   padding: 0%;
@@ -7,6 +8,7 @@
   box-sizing: border-box;
 }
 
+/* css for the whole body */
 body {
   font-family: roboto, Helvetica, sans-serif;
   font-size: 14px;
@@ -15,79 +17,16 @@ body {
   margin: 0%;
 }
 
+/* header section */
 .header {
   width: 100%;
   height: 100vh;
   display: block;
   background: url('../images/backgrounds/homeback.jpg')center 5% /cover no-repeat;
   margin-bottom: 1em;
-
 }
 
-
-
-.navbar {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 12%;
-  width: 70%;
-  background: #e9e4e4;
-  border-bottom: 5px solid rgb(185, 130, 130);
-  border-radius: 20px;
-
-}
-
-
-
-#logo {
-  margin-top: 3.7px;
-  padding: 1px;
-  cursor: pointer;
-}
-
-#logo img {
-  height: 45px;
-  width: 80px;
-  margin-right: 20px;
-  border-radius: 10px;
-}
-
-.check-boxes {
-  font-size: 20px;
-  color: #070707;
-  cursor: pointer;
-  display: none;
-  background-color: #e9b2b2;
-  width: 7%;
-  border-radius: 20%;
-}
-
-#check-box {
-  display: none;
-}
-
-.navbar ul li {
-  list-style: none;
-  position: relative;
-  display: inline-block;
-  margin: 10px 0 10px 2em;
-  color: rgb(230, 252, 252);
-
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  font-size: 16px;
-  color: #940101;
-}
-
-.navbar a:hover {
-  color: rgb(32, 9, 206);
-  text-decoration: underline;
-  transition: 0.5s;
-}
-
+/*header buttons styling*/
 header button {
   color: #0a0a1f;
   background: #e9b2b2;
@@ -110,7 +49,6 @@ header button:hover {
   font-size: 14px;
   color: rgb(5, 5, 5);
   letter-spacing: 1px;
-
 }
 
 .header h1 {
@@ -122,12 +60,81 @@ header button:hover {
   padding: 4px;
 }
 
+
+/* Navigation  and links styling */
+
+.navbar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 12%;
+  width: 70%;
+  background: #e9e4e4;
+  border-bottom: 5px solid rgb(185, 130, 130);
+  border-radius: 20px;
+}
+
+.navbar ul li {
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  margin: 10px 0 10px 2em;
+  color: rgb(230, 252, 252);
+
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #940101;
+}
+
+a:hover {
+  color: rgb(32, 9, 206);
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+/* logo styling */
+
+#logo {
+  margin-top: 3.7px;
+  padding: 1px;
+  cursor: pointer;
+}
+
+#logo img {
+  height: 45px;
+  width: 80px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+
+/* menu button style */
+.check-boxes {
+  font-size: 20px;
+  color: #070707;
+  cursor: pointer;
+  display: none;
+  background-color: #e9b2b2;
+  width: 7%;
+  border-radius: 20%;
+}
+
+#check-box {
+  display: none;
+}
+
+
+/* utilities classes */
 h2,
 h3 {
   font-family: tangerine;
   font-size: 18px;
   color: #000;
 }
+
 
 .main-h {
   font-size: 24px;
@@ -176,7 +183,7 @@ h3 {
 
 #aboutus {
   background: url('../images/aboutus/aboutusback3.jpg')center /cover no-repeat;
-  height: 100vh;
+  height: 90vh;
   width: 80%;
   margin: 0 auto;
   border: 1px solid brown;
@@ -337,7 +344,7 @@ h3 {
 
 #contactus {
   position: relative;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -483,8 +490,9 @@ input[type="reset"] {
   cursor: pointer;
   padding: 5px;
   font-size: 14px;
-  width: 11.5em;
+  width: 11em;
   margin-top: 14px;
+  display: inline-block;
 }
 
 input[type="submit"]:hover {
@@ -516,7 +524,7 @@ input[type="reset"]:hover {
   height: 50%;
   width: 30%;
   display: inline-block;
-  padding: 2%;
+  padding: 4%;
 
 }
 
@@ -643,40 +651,59 @@ footer>p {
   Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {
-  .header h1 {
-    margin-top: 30%;
-    font-size: 7em;
-   }
+@media (min-width: 1324px) and (max-width: 2687px) {
+  .navbar {
+    height: 9.5%;
+  }
 
-   .navbar{
-    height: 9%;
-   }
-
-  #aboutus {
-    height: 42vh;
-   }
-   #map-section .map {
-    height: 30vh;
+  #map-section .map {
+    height: 50vh;
     width: 70%;
   }
-  #contactus{
-    height: 43vh;
+}
+
+/* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) and (max-width: 1323px) {
+  .header h1 {
+    margin-top: 37%;
+    font-size: 6em;
   }
+
+  .navbar {
+    height: 8%;
+  }
+
+  #aboutus {
+    height: 45vh;
+  }
+
+  #contactus {
+    height: 45vh;
+  }
+
+  #map-section .map {
+    height: 30vh;
+    width: 80%;
+  }
+
+  .loginform {
+    height: 20%;
+    width: 40%;
+  }
+
+  .signupform {
+    height: 33%;
+    width: 35%;
+  }
+
   input[type="submit"],
-input[type="reset"] {
-  width: 11em;
-}
-  
-.loginform {
-  height: 20%;
-  width: 40%;
-  margin-top: 10%;
-}
-.signupform {
-  height: 30%;
-  margin-top: 10%;
-}
+  input[type="reset"] {
+    width: 9em;
+  }
 }
 
 
@@ -686,45 +713,54 @@ input[type="reset"] {
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  
- .header h1 {
-  margin-top: 30%;
-  font-size: 5em;
- }
- .navbar{
-  height: 8%;
- }
- #aboutus {
-  height: 45vh;
- }
- #aboutus-boxes {
-  max-width: 70%;
-}
 
-.services-boxes {
-  height: 20rem;
-}
-#map-section .map {
-  height: 35vh;
-  width: 80%;
-}
-#contactus{
-  height:40vh;
-}
-input[type="submit"],
-input[type="reset"] {
-  width: 8.6em;
-}
-.loginform{
-  height: 20%;
-  width: 40%;
-  margin-top: 10%;
-}
-.signupform{
-  height: 30%;
-  margin-top: 10%;
-}
-  
+  .header h1 {
+    margin-top: 30%;
+    font-size: 5em;
+  }
+
+  .navbar {
+    height: 8%;
+  }
+
+  #aboutus {
+    height: 80vh;
+  }
+
+
+  #aboutus-boxes {
+    max-width: 70%;
+  }
+
+  .services-boxes {
+    height: 20rem;
+  }
+
+  #map-section .map {
+    height: 35vh;
+    width: 80%;
+  }
+
+  #contactus {
+    height: 40vh;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    width: 8.6em;
+  }
+
+  .loginform {
+    height: 20%;
+    width: 40%;
+    margin-top: 10%;
+  }
+
+  .signupform {
+    height: 30%;
+    margin-top: 10%;
+  }
+
 }
 
 
@@ -747,6 +783,7 @@ input[type="reset"] {
     text-align: center;
     transition: all .5s;
   }
+
   .navbar ul li {
     display: inline-block;
     margin: 12px 5px 0 5px;
@@ -759,6 +796,7 @@ input[type="reset"] {
   .navbar ul li a {
     font-size: 20px;
   }
+
   #check-box:checked~ul {
     left: 4%;
     top: 9%;
@@ -766,238 +804,243 @@ input[type="reset"] {
 }
 
 
- /* 
+/* 
   Device = Tablets, Ipads (portrait)
   Screen = B/w 768px to 1024px
 */
 
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .header h1 {
-      margin-top: 35%;
-      font-size: 4rem;
-    }
-    #aboutus
-
-    #logo {
-      padding-left: 10px;
-    }
-
-    #logo img {
-      height: 45px;
-      width: 75px;
-      margin-left: -200px;
-    }
-
-    .navbar {
-      height: 10%;
-    }
-
-  
-
-    #map-section .map {
-      height: 35vh;
-      width: 70%;
-    }
-
-
-    #contactus {
-      height: 45vh;
-    }
-
-    .loginform {
-      height: 25%;
-      width: 50%;
-      margin-top: 10%;
-    }
-
-    .signupform {
-      width: 55%;
-      height: 37%;
-      margin-top: 10%;
-    }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header h1 {
+    margin-top: 35%;
+    font-size: 4rem;
   }
 
-  /* 
+  #aboutus #logo {
+    padding-left: 10px;
+  }
+
+  #logo img {
+    height: 45px;
+    width: 75px;
+    margin-left: -200px;
+  }
+
+  .navbar {
+    height: 10%;
+  }
+
+
+
+  #map-section .map {
+    height: 35vh;
+    width: 70%;
+  }
+
+
+  #contactus {
+    height: 45vh;
+  }
+
+  .loginform {
+    height: 25%;
+    width: 50%;
+    margin-top: 10%;
+  }
+
+  .signupform {
+    width: 55%;
+    height: 37%;
+    margin-top: 10%;
+  }
+}
+
+/* 
   Device = Low Resolution Tablets, Mobiles (Landscape)
   Screen = B/w 481px to 767px
 */
 
-  @media (min-width: 481px) and (max-width: 767px) {
-    .header {
-      width: 100%;
-    }
+@media (min-width: 481px) and (max-width: 767px) {
+  .header {
+    width: 100%;
+  }
 
-    .header h1 {
-      font-size: 2.6rem;
-      margin-top: 50%;
-    }
+  .header h1 {
+    font-size: 2.6rem;
+    margin-top: 50%;
+  }
 
-    .navbar {
-      height: 10%;
-    }
-
-    
-    ul {
-      position: fixed;
-      width: 90%;
-      height: 90vh;
-      background-color: transparent;
-      top: 10px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-    }
-
-    #aboutus {
-      height: 130vh;
-    }
-
-    .flavours-boxes {
-      flex-direction: column;
-    }
-
-    #contactus {
-      height: 100vh;
-
-    }
-
-    #contactus .form {
-      width: 45%;
-    }
-
-    .containers .details {
-      flex-direction: column;
-    }
-
-    .containers {
-      flex-direction: column;
-    }
-
-
-    .containers .details .boxes .text {
-      color: #000;
-    }
-
-    input[type="submit"],
-    input[type="reset"] {
-      width: 5.3em;
-    }
-
-    .loginform {
-      height: 35%;
-      width: 60%;
-      margin-top: 10%;
-    }
-
-    .signupform {
-      width: 65%;
-      height: 45%;
-      margin-top: 10%;
-    }
+  .navbar {
+    height: 10%;
   }
 
 
-  /* 
+  ul {
+    position: fixed;
+    width: 90%;
+    height: 90vh;
+    background-color: transparent;
+    top: 10px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  #aboutus {
+    height: 80vh;
+  }
+
+  .flavours-boxes {
+    flex-direction: column;
+  }
+
+  #contactus {
+    height: 100vh;
+
+  }
+
+  #contactus .form {
+    width: 45%;
+  }
+
+  .containers .details {
+    flex-direction: column;
+  }
+
+  .containers {
+    flex-direction: column;
+  }
+
+
+  .containers .details .boxes .text {
+    color: #000;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    width: 5.3em;
+  }
+
+  .loginform {
+    height: 35%;
+    width: 60%;
+    margin-top: 10%;
+  }
+
+  .signupform {
+    width: 65%;
+    height: 45%;
+    margin-top: 10%;
+  }
+}
+
+
+/* 
   Device = Most of the Smartphones Mobiles (Portrait)
   Screen = B/w 320px to 479px
 */
-  @media (min-width: 320px) and (max-width: 480px) {
-    .navbar {
-      width: 80%;
-      height: 10%;
-    }
-    .header h1 {
-      font-size: 2rem;
+@media (min-width: 320px) and (max-width: 480px) {
+  .navbar {
+    width: 80%;
+    height: 10%;
+  }
+
+  .header h1 {
+    font-size: 2rem;
     margin-top: 45%;
   }
 
-  .header button{
+  .header button {
     width: 6em;
   }
-    #logo img {
-      height: 30px;
-      width: 65px;
-      margin-left: -100px;
-    }
-    .header {
-      width: 100%;
-    }
 
-    .navbar ul li {
-      display: inline-block;
-      margin: 2px;
-      line-height: 30px;
-      background-color: #e9b2b2;
-      width: 25%;
-      height: 5%;
-      left: -2px;
-     display: block;
- 
-    }
-    #check-box:checked~ul {
-      top: 11%;
-      left: 1%;
-    }
-
-    
-   .navbar ul li a{
-      font-size: 12px;
-      }
-   
-
-    #aboutus {
-      height: 206vh;
-    }
-    .services-boxes {
-      height: 23rem;
-      flex-direction: column;
-      text-align: center;
-    }
-
-    
-    .flavours-boxes {
-      flex-direction: column;
-    }
-
-    .containers .details .boxes {
-      padding: 5px;
-    }
-
-    #contactus {
-      height: 150vh;
-    }
-
-    #contactus .form {
-      width: 50%;
-    }
-
-    
-    .containers {
-      flex-direction: column;
-    }
-
-
-    .containers .details .boxes .text {
-      color: #000;
-    }
-
-    #contactus .form {
-      width: 73%;
-      height: 50%
-    }
-
-    input[type="submit"],
-    input[type="reset"] {
-      width: 6em;
-    }
-    .loginform {
-      height: 45%;
-      width: 70%;
-    }
-
-    .signupform {
-      width: 90%;
-      height: 75%;
-      top: 3%;
-    }
+  #logo img {
+    height: 30px;
+    width: 65px;
+    margin-left: -100px;
   }
+
+  .header {
+    width: 100%;
+  }
+
+  .navbar ul li {
+    display: inline-block;
+    margin: 2px;
+    line-height: 30px;
+    background-color: #e9b2b2;
+    width: 25%;
+    height: 5%;
+    left: -2px;
+    display: block;
+
+  }
+
+  #check-box:checked~ul {
+    top: 11%;
+    left: 1%;
+  }
+
+
+  .navbar ul li a {
+    font-size: 12px;
+  }
+
+
+  #aboutus {
+    height: 206vh;
+  }
+
+  .services-boxes {
+    height: 23rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+  .flavours-boxes {
+    flex-direction: column;
+  }
+
+  .containers .details .boxes {
+    padding: 5px;
+  }
+
+  #contactus {
+    height: 150vh;
+  }
+
+  #contactus .form {
+    width: 50%;
+  }
+
+
+  .containers {
+    flex-direction: column;
+  }
+
+
+  .containers .details .boxes .text {
+    color: #000;
+  }
+
+  #contactus .form {
+    width: 73%;
+    height: 50%
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    width: 6em;
+  }
+
+  .loginform {
+    height: 45%;
+    width: 70%;
+  }
+
+  .signupform {
+    width: 90%;
+    height: 75%;
+    top: 3%;
+  }
+}
