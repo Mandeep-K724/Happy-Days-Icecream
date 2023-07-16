@@ -813,7 +813,7 @@ footer>p {
     font-size: 4rem;
   }
 
-  #aboutus #logo {
+ #logo {
     padding-left: 10px;
   }
 
@@ -985,7 +985,7 @@ footer>p {
 
 
   #aboutus {
-    height: 206vh;
+    height: 160vh;
   }
 
   .services-boxes {
@@ -993,7 +993,10 @@ footer>p {
     flex-direction: column;
     text-align: center;
   }
-
+  
+  #aboutus-boxes .box {
+    height:255px;
+  }
 
   .flavours-boxes {
     flex-direction: column;
