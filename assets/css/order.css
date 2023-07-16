@@ -230,3 +230,14 @@ input[type="reset"]:hover {
         top: 9%;
     }
 }
+@media (min-width: 250px) and (max-width: 480px) {
+    #logo {
+        padding-left: 130px;
+      }
+    
+      #logo img {
+        height: 30px;
+        width: 40px;
+        margin-left: -200px;
+      }
+}

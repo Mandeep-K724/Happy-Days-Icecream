@@ -985,7 +985,13 @@ footer>p {
 
 
   #aboutus {
-    height: 160vh;
+    height: 260vh;
+    width:100%;
+  }
+  
+  #aboutus-boxes .box  {
+    height:270px;
+    max-width:110%;
   }
 
   .services-boxes {
@@ -993,10 +999,8 @@ footer>p {
     flex-direction: column;
     text-align: center;
   }
+
   
-  #aboutus-boxes .box {
-    height:255px;
-  }
 
   .flavours-boxes {
     flex-direction: column;
@@ -1007,7 +1011,7 @@ footer>p {
   }
 
   #contactus {
-    height: 150vh;
+    height: 140vh;
   }
 
   #contactus .form {
@@ -1035,7 +1039,7 @@ footer>p {
   }
 
   .loginform {
-    height: 45%;
+    height: 55%;
     width: 70%;
   }
 
