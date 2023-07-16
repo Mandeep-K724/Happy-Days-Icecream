@@ -192,6 +192,14 @@ input[type="reset"]:hover {
         margin: auto;
     }
 }
+@media (min-width: 320px) and (max-width: 480px) {
+    .order-header{
+        height: 160vh;
+    }
+    .order-form {
+        margin-top: 6px;
+    }
+}
 
 /* Media query to call menu button */
 

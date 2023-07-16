@@ -106,12 +106,13 @@ header button:hover {
 #logo img {
   height: 45px;
   width: 80px;
-  margin-right: 20px;
+  margin-right: 90px;
   border-radius: 10px;
 }
 
 
 /* menu button style */
+ 
 .check-boxes {
   font-size: 20px;
   color: #070707;
@@ -120,6 +121,7 @@ header button:hover {
   background-color: #e9b2b2;
   width: 7%;
   border-radius: 20%;
+  margin-right: -40%;
 }
 
 #check-box {
@@ -958,6 +960,7 @@ footer>p {
     width: 80%;
     height: 10%;
   }
+  
 
   .header h1 {
     font-size: 2rem;
@@ -969,14 +972,14 @@ footer>p {
   }
 
   #logo img {
-    height: 30px;
-    width: 65px;
-    margin-left: -100px;
+    height: 25px;
+    width: 60px;
+    margin-left: -60px;
   }
 
   .header {
     width: 100%;
-    height: 50vh;
+    height:100vh;
   }
 
   .navbar ul li {
@@ -1003,7 +1006,7 @@ footer>p {
 
 
   #aboutus {
-    height: 95vh;
+    height: 260vh;
     width:100%;
   }
   
@@ -1031,7 +1034,7 @@ footer>p {
   }
 
   #contactus {
-    height: 55vh;
+    height:140vh;
   }
 
   #contactus .form {
@@ -1060,18 +1063,15 @@ footer>p {
 
   
   .loginform {
-    height: 40%;
+    height: 50%;
     width: 73%;
     margin-top: 10%;
   }
 
   .signupform {
-    width: 70%;
-    height: 60%;
+    width: 75%;
+    height: 75%;
     margin-top: 10%;
   }
-  #map-section .map {
-    height: 25vh;
-    width: 80%;
-  }
+
 }
