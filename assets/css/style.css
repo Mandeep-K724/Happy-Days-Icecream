@@ -102,16 +102,30 @@ header button:hover {
   margin-top: 3.7px;
   padding: 1px;
   cursor: pointer;
-  left: 5%;
+  margin: 2%;
 }
 
 #logo img {
-  height: 45px;
-  width: 80px;
+  height: 40px;
+  width: 70px;
   border-radius: 10px;
 }
 
+#logo img:hover {
+  animation-name: logo-zoom;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
 
+@keyframes logo-zoom {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
 
 /* menu button style */
 
@@ -123,7 +137,7 @@ header button:hover {
   background-color: #e9b2b2;
   margin: 50px;
   border-radius: 2px;
-padding: 1.5%;
+  padding: 1.5%;
 }
 
 
@@ -216,7 +230,6 @@ h3 {
   animation-duration: 3s;
   animation-fill-mode: both;
   color: #fa0707;
-
 }
 
 @keyframes text-zoom {
@@ -521,7 +534,7 @@ input[type="reset"]:hover {
 
 .loginform {
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 1em;
   height: 60%;
   width: 30%;
   display: inline-block;
@@ -552,11 +565,11 @@ input[type="reset"]:hover {
 
 .signupform {
   align-items: center;
-  margin-top: 2rem;
   height: 66%;
   width: 40%;
   display: inline-block;
   padding: 2%;
+  margin-top: 1em;
 }
 
 .signupform .input-display {
@@ -657,120 +670,87 @@ footer>p {
 */
 
 @media (min-width: 2337px) and (max-width: 2687px) {
-
-
-
-@media (min-width: 1323px)and (max-width: 2336px) {
   .header h1 {
-    margin-top: 13%;
+    margin-top: 30%;
     font-size: 5em;
   }
 
   #aboutus {
-    height: 95vh;
+    height: 50vh;
   }
 
-  .loginform {
-    height: 50%;
-  }
 
   .signupform {
-    height: 50%;
     width: 30%;
+    height: 55%;
   }
 
   #contactus {
-    height: 90vh;
+    height: 30vh;
   }
 
   #map-section .map {
-    height: 60vh;
+    height: 30vh;
   }
-
 }
 
-/* 
-  Device = Desktops
-  Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) and (max-width: 1323px) {
+@media (min-width: 1440px)and (max-width: 2336px) {
   .header h1 {
-    margin-top: 25%;
+    margin-top: 10%;
+    font-size: 5em;
   }
 
   #aboutus {
-    height: 55vh;
-  }
-
-  #contactus {
-    height: 55vh;
+    height: 120vh;
   }
 
   .loginform {
-    height: 40%;
+    height: 50%;
   }
 
   .signupform {
+    height: 50%;
     width: 30%;
-    height:70%;
   }
 
-}
-
-/* 
-  Device = Laptops, Desktops
-  Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1024px) and (max-width: 1280px) {
-  .header h1 {
-    margin-top: 20%;
+  #contactus {
+    height: 110vh;
   }
 
-
-  #aboutus {
+  #map-section .map {
     height: 70vh;
   }
-
   .signupform {
-    width: 30%;
-    height: 75%;
+    height: 80%;
   }
-
   .loginform {
-    height: 65%;
+    height: 70%;
   }
-
-  #contactus {
-    height: 45vh;
-  }
-
-  .loginform {
-    height: 40%;
-  }
-
-  .signupform {
-    height: 45%;
-    width: 30%;
-  }
-  #contactus {
-    height: 65vh;
-  }
-
 }
 
-@media (min-width: 1024px) and (max-width: 1169px) {
+
+@media (min-width: 1024px) and (max-width: 1440px) {
   .header h1 {
-    margin-top: 30%;
+    margin-top: 9%;
   }
 
   #aboutus {
-    height: 130vh;
+    height: 100vh;
+  }
+
+  #aboutus-boxes {
+    max-width: 60%;
+  }
+
+  #aboutus-boxes .box {
+    height: 180px;
   }
 
   #contactus {
-    height: 50vh;
+    height: 110vh;
+  }
+  .signupform {
+    height: 80%;
   }
 }
 
@@ -819,25 +799,36 @@ footer>p {
 
 @media (min-width: 768px)and (max-width: 1024px) {
   .header h1 {
-    margin-top: 37%;
+    margin-top: 17%;
   }
 
 
   #aboutus {
-    height: 100vh;
+    height: 180vh;
   }
 
+  #aboutus-boxes {
+    max-width: 60%;
+  }
+
+  #aboutus-boxes .box {
+    height: 170px;
+  }
 
   .flavours-boxes {
     flex-direction: column;
   }
 
   #contactus {
-    height: 80vh;
+    height: 170vh;
   }
 
   .containers {
     flex-direction: column;
+  }
+
+  .containers .details .boxes {
+    right: -30%;
   }
 
   .containers .details .boxes p {
@@ -854,26 +845,18 @@ footer>p {
   }
 }
 
-/* 
-  Device = Low Resolution Tablets, Mobiles (Landscape)
-  Screen = B/w 481px to 767px
-*/
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .header h1 {
-    margin-top: 40%;
-    font-size: 3.5em;
+    font-size: 3em;
+    margin-top: 20%;
   }
 
   #aboutus {
-    height: 130vh;
-  }
-
-  .flavours-boxes {
-    flex-direction: column;
+    height: 210vh;
   }
 
   #contactus {
-    height: 80vh;
+    height: 170vh;
   }
 
   .containers {
@@ -890,33 +873,35 @@ footer>p {
 
   .loginform {
     width: 55%;
-    height: 35%;
+    height: 60%;
   }
 
-.signupform {
-    width: 50%;
-    height: 45%;
+  .signupform {
+    width: 72%;
+    height: 80%;
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  
+
   #logo img {
-    height: 27px;
-    width: 50px;
+    height: 30px;
+    width: 60px;
+    margin: 50px;
   }
-    .navbar{
+
+  .navbar {
     height: 8%;
   }
+
   .header h1 {
     font-size: 3em;
-    margin-top: 40%;
+    margin-top: 35%;
   }
 
   .header p {
     font-size: 12px;
   }
- 
 
   #aboutus {
     height: 210vh;
@@ -968,8 +953,7 @@ footer>p {
   }
 
   .signupform {
-    margin-top: 10%;
     width: 72%;
-    height:80%;
+    height: 80%;
   }
 }
