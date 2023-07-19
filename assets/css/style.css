@@ -102,12 +102,12 @@ header button:hover {
   margin-top: 3.7px;
   padding: 1px;
   cursor: pointer;
+  left: 5%;
 }
 
 #logo img {
   height: 45px;
   width: 80px;
-
   border-radius: 10px;
 }
 
@@ -656,11 +656,35 @@ footer>p {
   Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1324px) and (max-width: 2687px) {
+@media (min-width: 2336px) and (max-width: 2687px) {
+  #aboutus {
+    height: 40vh;
+  }
+
   .signupform {
     width: 30%;
     height: 55%;
   }
+}
+
+@media (min-width: 1323px)and (max-width: 2336px) {
+  .header h1 {
+    margin-top: 15%;
+  }
+
+  #aboutus {
+    height: 55vh;
+  }
+
+  .loginform {
+    height: 40%;
+  }
+
+  .signupform {
+    height: 45%;
+    width:30%;
+  }
+
 }
 
 /* 
@@ -668,18 +692,36 @@ footer>p {
   Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) and (max-width: 1323px) {}
+@media (min-width: 1281px) and (max-width: 1323px) {
+  .header h1 {
+    margin-top: 20%;
+  }
 
+  #aboutus {
+    height: 55vh;
+  }
+
+  .loginform {
+    height: 40%;
+  }
+
+  .signupform {
+    height: 45%;
+  }
+}
 
 /* 
   Device = Laptops, Desktops
   Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 776px) and (max-width: 1169px) {
+@media (min-width: 1024px) and (max-width: 1281px) {
+  .header h1 {
+    margin-top: 20%;
+  }
 
   #aboutus {
-    height: 210vh;
+    height: 55vh;
   }
 
   .signupform {
@@ -691,9 +733,25 @@ footer>p {
     height: 65%;
   }
 
+  #contactus {
+    height: 50vh;
+  }
+
+  .loginform {
+    height: 40%;
+  }
+
+  .signupform {
+    height: 45%;
+  }
+
 }
 
-
+@media (min-width: 1024px) and (max-width: 1169px) {
+  #aboutus {
+    height: 100vh;
+  }
+}
 
 /* Media query to call menu button */
 
@@ -738,17 +796,81 @@ footer>p {
 
 
 
+@media (min-width: 767px)and (max-width: 1024px) {
+  .header h1 {
+    margin-top: 25%;
+  }
+
+  #aboutus {
+    height: 105vh;
+  }
+
+
+  .flavours-boxes {
+    flex-direction: column;
+  }
+
+  #contactus {
+    height: 85vh;
+  }
+
+  .containers {
+    flex-direction: column;
+  }
+
+  .loginform {
+    height: 40%;
+  }
+
+  .signupform {
+    height: 45%;
+  }
+
+
+}
 
 /* 
   Device = Low Resolution Tablets, Mobiles (Landscape)
   Screen = B/w 481px to 767px
 */
+@media (min-width: 481px) and (max-width: 767px) {
+  .header h1 {
+    margin-top: 40%;
+  }
 
+  .flavours-boxes {
+    flex-direction: column;
+  }
 
-@media (min-width: 300px) and (max-width: 776px) {
+  #contactus {
+    height: 85vh;
+  }
+
+  .containers {
+    flex-direction: column;
+  }
+
+  #contactus .form {
+    width: 60%;
+  }
+
+  .loginform {
+    height: 40%;
+  }
+
+  .signupform {
+    width: 65%;
+    height: 45%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .header h1 {
+    margin-top: 50%;
+  }
 
   #aboutus {
-    height: 220vh;
+    height: 105vh;
   }
 
   #aboutus-boxes {
@@ -757,7 +879,11 @@ footer>p {
 
   #aboutus-boxes .box {
     height: 220px;
+  }
 
+  .check-boxes {
+    width: 15%;
+    height: 30%;
   }
 
   .flavours-boxes {
@@ -776,7 +902,7 @@ footer>p {
   }
 
   #contactus {
-    height: 170vh;
+    height: 85vh;
   }
 
   .containers {
@@ -792,11 +918,8 @@ footer>p {
   }
 
   .signupform {
-    width: 65%;
-    height: 80%;
-  }
-
-  .menu-btn:checked~ul {
-    right: 15%;
+    width: 70%;
+    height: 45%;
   }
 }
+
