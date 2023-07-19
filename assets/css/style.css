@@ -840,12 +840,12 @@ footer>p {
 
 @media (min-width: 768px)and (max-width: 1024px) {
   .header h1 {
-    margin-top: 30%;
+    margin-top: 37%;
   }
 
 
   #aboutus {
-    height: 130vh;
+    height: 100vh;
   }
 
 
@@ -854,7 +854,7 @@ footer>p {
   }
 
   #contactus {
-    height: 90vh;
+    height: 80vh;
   }
 
   .containers {
@@ -862,7 +862,7 @@ footer>p {
   }
 
   .containers .details .boxes p {
-    color: #ff0404;
+    color: #020202;
   }
 
   .loginform {
