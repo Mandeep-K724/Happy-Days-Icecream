@@ -24,10 +24,9 @@ body {
     align-items: center;
     justify-content: center;
     height: 12%;
-    width: 70%;
+    width: 100%;
     background: #e9e4e4;
     border-bottom: 5px solid rgb(185, 130, 130);
-    border-radius: 20px;
 }
 
 .navbar ul li {
@@ -61,7 +60,7 @@ body {
 #logo img {
     height: 45px;
     width: 80px;
-    margin-right: 20px;
+
     border-radius: 10px;
 }
 
@@ -192,10 +191,12 @@ input[type="reset"]:hover {
         margin: auto;
     }
 }
+
 @media (min-width: 320px) and (max-width: 480px) {
-    .order-header{
+    .order-header {
         height: 160vh;
     }
+
     .order-form {
         margin-top: 6px;
     }
@@ -238,14 +239,15 @@ input[type="reset"]:hover {
         top: 9%;
     }
 }
+
 @media (min-width: 250px) and (max-width: 480px) {
     #logo {
         padding-left: 130px;
-      }
-    
-      #logo img {
+    }
+
+    #logo img {
         height: 30px;
         width: 40px;
-        margin-left: -200px;
-      }
+
+    }
 }
