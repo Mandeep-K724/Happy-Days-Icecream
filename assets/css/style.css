@@ -746,12 +746,12 @@ footer>p {
 
 @media (min-width: 1024px) and (max-width: 1280px) {
   .header h1 {
-    margin-top: 25%;
+    margin-top: 20%;
   }
 
 
   #aboutus {
-    height: 55vh;
+    height: 70vh;
   }
 
   .signupform {
@@ -764,7 +764,7 @@ footer>p {
   }
 
   #contactus {
-    height: 40vh;
+    height: 45vh;
   }
 
   .loginform {
@@ -776,7 +776,7 @@ footer>p {
     width: 30%;
   }
   #contactus {
-    height: 55vh;
+    height: 65vh;
   }
 
 }
@@ -921,7 +921,12 @@ footer>p {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .navbar{
+  
+  #logo img {
+    height: 27px;
+    width: 50px;
+  }
+    .navbar{
     height: 8%;
   }
   .header h1 {
@@ -935,7 +940,7 @@ footer>p {
  
 
   #aboutus {
-    height: 110vh;
+    height: 210vh;
   }
 
   #aboutus-boxes {
@@ -963,7 +968,7 @@ footer>p {
   }
 
   #contactus {
-    height: 90vh;
+    height: 170vh;
   }
 
   .containers {
@@ -980,12 +985,12 @@ footer>p {
 
   .loginform {
     width: 55%;
-    height: 35%;
+    height: 60%;
   }
 
   .signupform {
-    margin-top: 20%;
+    margin-top: 10%;
     width: 72%;
-    height: 45%;
+    height:80%;
   }
 }
