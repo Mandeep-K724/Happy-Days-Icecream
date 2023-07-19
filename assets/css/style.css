@@ -137,7 +137,7 @@ header button:hover {
   background-color: #e9b2b2;
   margin: 50px;
   border-radius: 2px;
-  padding: 1.5%;
+  padding: 1%;
 }
 
 
@@ -701,7 +701,7 @@ footer>p {
   }
 
   #aboutus {
-    height: 120vh;
+    height: 110vh;
   }
 
   .loginform {
@@ -730,7 +730,7 @@ footer>p {
 @media (min-width: 1170px) and (max-width: 1440px)
 {
   #aboutus {
-    height: 120vh;
+    height: 110vh;
   }
   .signupform {
     height: 80%;
@@ -758,7 +758,7 @@ footer>p {
     height: 110vh;
   }
   .signupform {
-    height: 80%;
+    height: 60%;
   }
 }
 
@@ -844,12 +844,12 @@ footer>p {
   }
 
   .loginform {
-    height: 40%;
+    height: 70%;
   }
 
   .signupform {
     width: 35%;
-    height: 45%;
+    height: 80%;
   }
 }
 
@@ -860,7 +860,7 @@ footer>p {
   }
 
   #aboutus {
-    height: 210vh;
+    height: 180vh;
   }
 
   #contactus {
@@ -898,13 +898,10 @@ footer>p {
     margin: 50px;
   }
 
-  .navbar {
-    height: 8%;
-  }
-
+  
   .header h1 {
     font-size: 3em;
-    margin-top: 35%;
+    margin-top: 30%;
   }
 
   .header p {
@@ -912,7 +909,7 @@ footer>p {
   }
 
   #aboutus {
-    height: 210vh;
+    height: 220vh;
   }
 
   #aboutus-boxes {
