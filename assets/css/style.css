@@ -909,7 +909,7 @@ footer>p {
   }
 
   #aboutus {
-    height: 220vh;
+    height: 130vh;
   }
 
   #aboutus-boxes {
@@ -937,7 +937,7 @@ footer>p {
   }
 
   #contactus {
-    height: 170vh;
+    height: 100vh;
   }
 
   .containers {
@@ -954,11 +954,11 @@ footer>p {
 
   .loginform {
     width: 55%;
-    height: 60%;
+    height: 45%;
   }
 
   .signupform {
     width: 72%;
-    height: 80%;
+    height: 50%;
   }
 }
