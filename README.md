@@ -1,8 +1,74 @@
-<img src="assets/images/logos/logo.png" alt="website's logo">
+<img src="assets/images/logos/logo.png" alt="website's logo"> 
+<link rel="stylesheet" href="assets/css/style.css">
+<h1>Happy Days Icecream Website</h1>
+Welcome to the Happy Days Icecream Website is designed to be responsive website allowing visitors to view on a range of devices. It allows visitors to find out about the Happy Days Icecream shop.
+<img src="assets/images/readme/responsive.png" alt="website responsiveness picture">
+<br>
+<a class="text-color" href="https://mandeep-k724.github.io/Happy-Days-Icecream/">Surf the Happy Days Icecream Website here</a>
+<h2>Contents</h2>
 
-Welcome,
+User Experience (UX)
+<li>Initial Discussion</li>
+<li>User Stories</li>
+<li>Design</li><br>
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Colour Scheme
+<li>Typography</li>
+<li>Wireframes</li>
+<li>Features</li>
+<li>Accessibility</li>
+<li>Technologies Used</li><br>
+
+Languages Used
+<li>Frameworks, Libraries & Programs Used</li>
+<li>Deployment & Local Development</li>
+
+Colour Scheme
+<li>Initial Discussion</li>
+<li>User Stories</li>
+<li>Design</li>
+
+User Experience (UX)
+<li>Initial Discussion</li>
+<li>User Stories</li>
+<li>Design</li>
+
+User Experience (UX)
+<li>Initial Discussion</li>
+<li>User Stories</li>
+<li>Design</li>
+
+
+
+
+
+
+
+
+
+Deployment
+Local Development
+How to Fork
+How to Clone
+Testing
+
+W3C Validator
+Solved Bugs
+Known Bugs
+Testing User Stories
+Lighthouse
+Index Page
+Books Page
+Contact Us Page
+Thank You Page
+Full Testing
+Credits
+
+Code Used
+Content
+Media
+Acknowledgments
+
 
 You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
 
