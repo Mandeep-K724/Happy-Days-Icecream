@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Noto+Sans+Tamil:wght@300&family=Oswald:wght@300&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@300&family=Oswald:wght@300&family=Roboto:wght@300;400&display=swap');
 
 /* css reset */
 * {
@@ -821,7 +821,7 @@ footer>p {
 
 
   #aboutus {
-    height: 90vh;
+    height: 190vh;
   }
 
   #aboutus-boxes {
@@ -870,7 +870,7 @@ footer>p {
   }
 
   #aboutus {
-    height: 90vh;
+    height: 210vh;
   }
 
   #contactus {
