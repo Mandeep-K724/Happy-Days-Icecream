@@ -684,7 +684,7 @@ footer>p {
   }
 
   #contactus {
-    height: 70vh;
+    height: 130vh;
   }
 
   #map-section .map {
@@ -699,7 +699,7 @@ footer>p {
   }
 
   #aboutus {
-    height:60vh;
+    height:120vh;
   }
   .loginform {
     height: 30%;
@@ -711,7 +711,7 @@ footer>p {
   }
 
   #contactus {
-    height: 60vh;
+    height: 130vh;
   }
 
   #map-section .map {
@@ -727,11 +727,11 @@ footer>p {
     margin-top: 10%;
   }
   #aboutus {
-    height: 100vh;
+    height: 110vh;
   }
   
   #contactus {
-    height: 90vh;
+    height: 110vh;
   }
 
 .signupform {
@@ -821,7 +821,7 @@ footer>p {
 
 
   #aboutus {
-    height: 190vh;
+    height: 180vh;
   }
 
   #aboutus-boxes {
@@ -837,7 +837,7 @@ footer>p {
   }
 
   #contactus {
-    height: 90vh;
+    height: 170vh;
   }
 
   .containers {
@@ -874,7 +874,7 @@ footer>p {
   }
 
   #contactus {
-    height: 90vh;
+    height: 160vh;
   }
 
   .flavours-boxes {
