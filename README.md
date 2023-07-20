@@ -6,7 +6,7 @@
 <p>Welcome to the Happy Days Icecream Website is designed to be responsive website allowing visitors to view on a range of devices. It allows visitors to find out about the Happy Days Icecream shop.</p>
 <img src="assets/images/readme/responsive.png" alt="website responsiveness picture">
 <br>
-<a class="text-color" href="https://mandeep-k724.github.io/Happy-Days-Icecream/">Surf the Happy Days Icecream Website here\</a>
+<a class="text-color" href="https://mandeep-k724.github.io/Happy-Days-Icecream/">Surf the Happy Days Icecream Website here</a>
 
 <h2>Contents</h2>
 
