@@ -1,7 +1,8 @@
 <img src="assets/images/logos/logo.png" alt="website logo picture">
 <link rel="stylesheet" href="assets/css/style.css">
 
-<h1>Happy Days Icecream Website<img src="assets/images/</h1>
+<h1>Happy Days Icecream Website</h1>
+
 <p>Welcome to the Happy Days Icecream Website is designed to be responsive website allowing visitors to view on a range of devices. It allows visitors to find out about the Happy Days Icecream shop.</p>
 <img src="assets/images/readme/responsive.png" alt="website responsiveness picture">
 <br>
@@ -54,24 +55,6 @@
 
 <li>W3C Validator
 
-<li>Solved Bugs
-
-<li>Known Bugs
-
-<li>Testing User Stories
-
-<li>Lighthouse
-
-<li>Index Page
-
-<li>Books Page
-
-<li>Contact Us Page
-
-<li>Thank You Page
-
-<li>Full Testing</li>
-<br>
 
 <h3>Credits</h3>
 
@@ -161,7 +144,7 @@ All the images i used in this website is from <a href="https://www.pexels.com/">
 
 Wireframes were created for desktop.
 
-<img src="assets/images/readme/Wireframes.JPG">
+<img src="assets/images/readme/Wireframes.jpg">
 
 <h2>Features</h2>
 
@@ -303,6 +286,9 @@ Go to the repository for this project, Mandeep-K724/Happy-Days-Icecream.
 <h1>Testing</h1>
 Testing was ongoing throughout the entire build. I utilised Chrome developer tools while building to pinpoint and troubleshoot any issues as I went along.
 <h2>W3C Validator</h2>
+<a href="https://www.w3.org/">WWW.W3C.ORG</a>
+<br>
+<br>
 The W3C validator was used to validate the HTML on all pages of the website. It was also used to validate CSS in the style.css file.
 <br><br>
 <h1>Credits</h1>
@@ -323,7 +309,7 @@ Website used pictures and vs code editor and logos, pictures source was <a href=
 
 <a href="(https://www.google.co.uk/chrome/)">Google Chrome Browser</a>
 
-<h2>Acknowledgments\</h2>
+<h2>Acknowledgments</h2>
 
 I would like to acknowledge the following people who helped me along the way in completing my first milestone project:<a href="https://app.slack.com/client/T0L30B202/D05BLRGBBQ9"><br>
 Dario Carrasquel</a>,my Code Institute Mentor.
